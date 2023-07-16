@@ -1,0 +1,42 @@
+.team-card_wraper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.team-card_wraper h1 {
+  text-decoration: none;
+  font-weight: 300;
+  font-style: normal;
+  color: var(--darkcyan);
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: 0px;
+}
+.team-card_wraper h2 {
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Nunito', sans-serif;
+    color: var(--lightcyan);
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0px;
+}
+.team-card_wraper p {
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Nunito', sans-serif;
+    color: var(--lightcyan);
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0px;
+}
+.ani-cards{
+  transition: all 500ms ease;
+}
+.ani-cards:hover{
+  transform: scale(1.05);
+  transform: rotate(3deg);
+}

@@ -1,0 +1,37 @@
+.footer-images {
+  width: 80px;
+  max-width: 100%;
+}
+
+.footer-text_side h4 {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 135%;
+  margin-top: 16px;
+  color: #a0a9be;
+  white-space: pre-wrap;
+}
+.footer-text_side h1 {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 15%;
+  color: #a0a9be;
+  white-space: pre-wrap;
+}
+
+.footer-water-mark {
+    margin: 0;
+    font-size: 12px;
+    line-height: 11px;
+    font-weight: 400;
+    padding-bottom: 12px;
+    color: #A0A9BE;
+    white-space: pre-wrap;
+}
+
+@media screen and (max-width:281px) {
+    .footer-text_side h1 {
+        font-size: 15px;
+        padding-top: 15px;
+    }
+}

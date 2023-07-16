@@ -1,0 +1,69 @@
+nav {
+  font-family: "Montserrat", sans-serif;
+}
+.nav-bar_container {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+}
+.nav-bar_container h1 {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.1;
+  cursor: pointer;
+  letter-spacing: 0px;
+}
+
+.nav-bar_elements ul {
+  display: flex;
+  gap: 43px;
+  flex-wrap: wrap;
+  padding-right: 80px;
+}
+.nav-bar_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-bar_elements ul li a {
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+.nav-bg-col{
+  background-color: var(--black);
+}
+.nav-bar_elements ul li a:hover {
+  color: #fed130;
+}
+nav li a.active {
+  color: #fed130;
+}
+.text-decoration{
+  text-decoration: none;
+}
+.burger_menu {
+  padding-right: 15px;
+  display: none;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 950px) {
+  .nav-bar_elements ul a {
+    display: none;
+  }
+  .burger_menu {
+    display: inline;
+  }
+}
+@media screen and (max-width: 475px) {
+  .nav-bar_container {
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-bar_elements ul{
+    padding-right: 0px;
+  }
+}

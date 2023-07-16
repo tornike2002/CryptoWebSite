@@ -1,0 +1,21 @@
+
+.why-img{
+    width: 100px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.why-animation{
+    transition: all 500ms ease;
+
+}
+
+.why-animation:hover{
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 975px) {
+ .why-helper p {
+    width: 100% !important;
+ }   
+}

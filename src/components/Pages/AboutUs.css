@@ -1,0 +1,33 @@
+.about-us_container {
+  background-image: url("../../assets/background.jpg");
+  min-height: 50vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+}
+
+.about-us_text{
+    height: 50vh;
+}
+.about-us_text h1 {
+    color: var(--lightcyan);
+    font-size: 60px;
+    font-family: 'Nunito', sans-serif;
+}
+.about-us_text p {
+    color: var(--lightcyan);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media screen and (max-width: 280px) {
+    .about-us_text p{
+        font-size: smaller;
+    }
+    .about-us_text {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+}

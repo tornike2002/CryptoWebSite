@@ -1,38 +1,38 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  color: var(--white);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html{
+  background-color: var(--black);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2, p {
+  margin: 0;
+  padding: 0;
 }
+/* montserrat */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+/* nunito */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+:root {
+  --black: #1b2223;
+  --darkcyan: #3a4f50;
+  --lightcyan: #0ef6cc;
+  --white: #f4fefd;
 }
-
-.App-link {
-  color: #61dafb;
+nav a.active{
+  color: #0ef6cc;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tt-c {
+  color: var(--lightcyan);
+}
+.pp-c{
+  color: var(--darkcyan);
+}
+.bgg-c {
+  background-color: var(--black);
 }
