@@ -13,7 +13,7 @@ const NavBar = () => {
     <Fragment>
       <nav className="container-fluid nav-bg-col p-0 m-0">
         <div className="nav-bar_container">
-          <Link className="text-decoration" to="/">
+          <Link className="text-decoration ms-2" to="/">
             <h1>CRYPTOCURRENCY</h1>
           </Link>
           <div className="nav-bar_elements">
