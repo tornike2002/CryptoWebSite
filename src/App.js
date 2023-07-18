@@ -1,30 +1,21 @@
-import "./App.css";
+import React from "react";
 import Home from "./components/Pages/Home";
 import { Routes, Route } from "react-router-dom";
 import NoPage from "./components/NoPage";
 import AboutUs from "./components/Pages/AboutUs";
 import Services from "./components/Pages/Services";
-
+import "./App.css";
 import { Contact } from "./components/Pages/Contact";
 import Register from "./components/registration/Register";
 import Login from "./components/registration/Login";
-import { useEffect, useState } from "react";
 import ProtectedRoutes from "./components/registration/ProtectedRoutes";
 import More from "./components/Pages/More";
-import CryptoList from "./components/home-components/CryptoList";
 import Cryptos from "./components/Pages/Cryptos";
 import BurgerMenu from "./components/BurgerMenu";
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const userInfo = localStorage.getItem("registrationValues");
-  useEffect(() => {
-    if (userInfo) {
-      setIsLoggedIn(true);
-    } else {
-      setIsLoggedIn(false);
-    }
-  }, []);
+
   return (
     <div className="App">
       <Routes>
