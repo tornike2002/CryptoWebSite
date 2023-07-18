@@ -17,7 +17,7 @@ const BurgerMenu = () => {
     <div className="w-100 mw-100 d-flex justify-content-end bgg-c">
       {open ? (
         <div className="bur-main-cont d-flex gap-3 flex-column p-3">
-          <h1 className="text-center tt-c">CRYPTOCURRENCY</h1>
+            <h1 className="text-center tt-c">CRYPTOCURRENCY</h1>
           <NavLink className="tt-c buranim" to="/home">
             HOME
           </NavLink>
@@ -34,7 +34,7 @@ const BurgerMenu = () => {
             CRYPTO LIST
           </NavLink>
           {locCheck ? (
-            <NavLink className="tt-c buranim" onClick={logoutHandler}>
+            <NavLink to="/home" className="tt-c buranim" onClick={logoutHandler}>
               LOG OUT
             </NavLink>
           ) : (
