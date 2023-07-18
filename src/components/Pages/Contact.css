@@ -1,0 +1,36 @@
+.contact-main_container {
+  background-image: url("../../assets/background.jpg");
+  min-height: 50vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+}
+
+.contact-text_wrapper {
+  min-height: 50vh;
+}
+.contact-text_wrapper h1 {
+  font-size: 60px;
+  font-family: "Nunito", sans-serif;
+}
+.contact-text_wrapper p {
+  font-weight: 400;
+  font-style: normal;
+}
+
+.contact-helper-div i {
+    font-size: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-forms_container {
+        flex-direction: column;
+        align-items: start;
+    }
+    .contact-froms_wrapper{
+        width: 100% !important;
+    }
+    .contact-info_wrapper h1{
+        text-align: center;
+    }
+}

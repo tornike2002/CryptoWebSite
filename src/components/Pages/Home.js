@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import NavBar from "../NavBar";
 import "./Home.css";
 import CryptoList from "../home-components/CryptoList";
+import {Link} from "react-router-dom"
 
 import Consultation from "../home-components/Consultation";
 import TeamCards from "../UI/TeamCards";
@@ -9,6 +10,7 @@ import team1 from "../../assets/chalvez.jpg";
 import team2 from "../../assets/harding.jpg";
 import team3 from "../../assets/mike.jpg";
 import team4 from "../../assets/kyle.jpg";
+import laptop from "../../assets/laptop.png";
 import TrackerYears from "../home-components/TrackerYears";
 import Footer from "../Footer";
 
@@ -25,7 +27,9 @@ const Home = (props) => {
                 Obtaining bitcoins works just like obtaining any other currency.
                 You can buy and {<br />} sell them, and that is the future.
               </p>
-              <button type="button">READ MORE</button>
+              <Link to="/more">
+                <button type="button">READ MORE</button>
+              </Link>
             </div>
           </div>
         </div>
@@ -48,6 +52,29 @@ const Home = (props) => {
           <TrackerYears years="2413" yearsTrack="Active accounts" />
           <TrackerYears years="8123" yearsTrack="Monthly transactions" />
         </div>
+        <section className="lap-main-cont d-flex container gap-5 justify-content-center align-items-center mt-5">
+          <div className="lap-text">
+            <h1 className="tt-c">Check Our BTC /{<br />} THB Price Chart</h1>
+            <h4 className="tt-c">
+              The blockchain has far-reaching implications for the structure of
+              societies being built today. Blockchains and cryptocurrencies are
+              quickly becoming the bedrock of sustainable communities.
+            </h4>
+            <p className="pp-c">
+              The blockchain has far-reaching implications for the structure of
+              societies being built today. Blockchains and cryptocurrencies are
+              quickly becoming the bedrock of sustainable communities.
+            </p>
+            <Link to="/more">
+              <button type="button" className="btn btn-outline-danger mt-3">
+                Read More
+              </button>
+            </Link>
+          </div>
+          <div className="lap-pic">
+            <img src={laptop} alt="dsa" />
+          </div>
+        </section>
         {/* footer here */}
         <Footer />
       </div>

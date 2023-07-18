@@ -50,6 +50,11 @@ nav li a.active {
   color: #ffffff;
 }
 
+@media screen and (max-width: 1035px) {
+  .nav-bar_elements ul{
+    padding-right: 0px;
+  }
+}
 @media screen and (max-width: 950px) {
   .nav-bar_elements ul a {
     display: none;

@@ -46,9 +46,7 @@ p {
   letter-spacing: 1.2px;
   width: fit-content;
 }
-.home-main_container {
-  /* padding-left: 100px; */
-}
+
 
 .buy-card_container {
   display: flex;
@@ -104,6 +102,15 @@ p {
   gap: 5px;
 }
 
+@media screen and (max-width: 1000px) {
+  .lap-main-cont{
+    flex-direction: column;
+  }
+  .lap-pic img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
 @media screen and (max-width: 600px) {
   .home-text_flex h1 {
     font-size: 32px;

@@ -2,6 +2,12 @@ import React, { Fragment } from "react";
 import "./NavBar.css";
 import { NavLink, Link } from "react-router-dom";
 const NavBar = () => {
+  const locCheck = localStorage.getItem("registrationValues");
+  const refresh = () => window.location.reload(true);
+  const logoutHandler = () => {
+    localStorage.removeItem("registrationValues");
+    refresh();
+  };
   return (
     <Fragment>
       <nav className="container-fluid nav-bg-col">
@@ -21,10 +27,23 @@ const NavBar = () => {
                 <NavLink to="/services">SERVICES</NavLink>
               </li>
               <li>
-                <NavLink to="/pages">PAGES</NavLink>
+                <NavLink to="/contact">CONTACTS</NavLink>
               </li>
               <li>
-                <NavLink to="/contact">CONTACTS</NavLink>
+                <NavLink to="/crypto">CRYPTO LIST</NavLink>
+              </li>
+              <li>
+                {locCheck ? (
+                  <NavLink
+                    to="/"
+                    className="text-white"
+                    onClick={logoutHandler}
+                  >
+                    LOG OUT
+                  </NavLink>
+                ) : (
+                  <NavLink to="/register">REGISTER</NavLink>
+                )}
               </li>
             </ul>
           </div>
@@ -36,5 +55,4 @@ const NavBar = () => {
     </Fragment>
   );
 };
-
 export default NavBar;

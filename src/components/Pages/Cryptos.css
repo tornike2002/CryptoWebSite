@@ -1,0 +1,27 @@
+.crypto-list-background {
+  background-image: url("../../assets/background.jpg");
+  min-height: 50vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+}
+
+.crypto-list-text {
+  height: 50vh;
+}
+.crypto-list-text h1 {
+  font-size: 60px;
+  font-family: "Nunito", sans-serif;
+}
+
+@media screen and (max-width :675px) {
+  .sh{
+    display: none;
+    
+  }
+}
+@media screen and (max-width :350px) {
+  .hh{
+    width: 5px !important;
+  }
+}

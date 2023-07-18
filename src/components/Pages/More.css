@@ -1,0 +1,15 @@
+.more-bg-section {
+  background-image: url("../../assets/background.jpg");
+  min-height: 50vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+}
+
+.more-text_wrapper {
+  height: 50vh;
+}
+.more-text_wrapper h1 {
+  font-size: 60px;
+  font-family: "Nunito", sans-serif;
+}
