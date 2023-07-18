@@ -34,7 +34,7 @@ const BurgerMenu = () => {
             CRYPTO LIST
           </NavLink>
           {locCheck ? (
-            <NavLink to="/" className="tt-c buranim" onClick={logoutHandler}>
+            <NavLink to="/home" className="tt-c buranim" onClick={logoutHandler}>
               LOG OUT
             </NavLink>
           ) : (
