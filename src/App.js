@@ -14,8 +14,6 @@ import Cryptos from "./components/Pages/Cryptos";
 import BurgerMenu from "./components/BurgerMenu";
 
 function App() {
-  const userInfo = localStorage.getItem("registrationValues");
-
   return (
     <div className="App">
       <Routes>
