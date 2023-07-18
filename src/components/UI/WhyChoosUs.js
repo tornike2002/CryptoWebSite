@@ -1,6 +1,5 @@
 import React from "react";
 import "./WhyChooseUs.css";
-import img1 from "../../assets/footer2.png";
 const WhyChoosUs = (props) => {
   return (
     <div className="d-flex gap-2 why-animation align-items-start">
