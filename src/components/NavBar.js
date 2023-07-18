@@ -36,7 +36,6 @@ const NavBar = () => {
               <li>
                 {locCheck ? (
                   <NavLink
-                    to="/home"
                     className="text-white"
                     onClick={logoutHandler}
                   >
