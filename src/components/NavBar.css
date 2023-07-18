@@ -50,17 +50,20 @@ nav li a.active {
   color: #ffffff;
 }
 
+.nav-burger-elements{
+  display: none;
+}
 @media screen and (max-width: 1035px) {
   .nav-bar_elements ul{
     padding-right: 0px;
   }
 }
 @media screen and (max-width: 950px) {
-  .nav-bar_elements ul a {
+  .nav-bar_container {
     display: none;
   }
-  .burger_menu {
-    display: inline;
+  .nav-burger-elements{
+    display: flex;
   }
 }
 @media screen and (max-width: 475px) {

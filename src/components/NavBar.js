@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import "./NavBar.css";
 import { NavLink, Link } from "react-router-dom";
+import BurgerMenu from "./BurgerMenu";
 const NavBar = () => {
   const locCheck = localStorage.getItem("registrationValues");
   const refresh = () => window.location.reload(true);
@@ -10,7 +11,7 @@ const NavBar = () => {
   };
   return (
     <Fragment>
-      <nav className="container-fluid nav-bg-col">
+      <nav className="container-fluid nav-bg-col p-0 m-0">
         <div className="nav-bar_container">
           <Link className="text-decoration" to="/">
             <h1>CRYPTOCURRENCY</h1>
@@ -47,9 +48,9 @@ const NavBar = () => {
               </li>
             </ul>
           </div>
-          <div className="burger_menu">
-            <i className="fa-solid fa-bars"></i>
-          </div>
+        </div>
+        <div className="nav-burger-elements">
+          <BurgerMenu />
         </div>
       </nav>
     </Fragment>

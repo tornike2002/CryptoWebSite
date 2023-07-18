@@ -1,0 +1,25 @@
+.bur-main-cont {
+  background-color: #31343b !important;
+  transition: all 6s ease;
+  width: 100%;
+  max-width: 100%;
+}
+.buranim{
+transition: all 500ms ease;
+
+}
+.bur-main-cont h1{
+    font-size: 15px;
+}
+.buranim:hover {
+  font-size: 18px;
+}
+.ham-menu{
+    background-color: #31343b;
+}
+
+.ham-menu i{
+    font-size: 30px;
+    color: var(--lightcyan) !important;
+    cursor: pointer;
+}

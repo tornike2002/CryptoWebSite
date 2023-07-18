@@ -13,6 +13,7 @@ import ProtectedRoutes from "./components/registration/ProtectedRoutes";
 import More from "./components/Pages/More";
 import CryptoList from "./components/home-components/CryptoList";
 import Cryptos from "./components/Pages/Cryptos";
+import BurgerMenu from "./components/BurgerMenu";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -32,6 +33,8 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/more" element={<More />} />
+        <Route path="/burger" element={<BurgerMenu />} />
+
         <Route element={<ProtectedRoutes />}>
           <Route path="/about" element={<AboutUs />} />
           <Route path="/services" element={<Services />} />
