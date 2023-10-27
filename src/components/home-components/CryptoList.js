@@ -7,7 +7,7 @@ const CryptoList = () => {
 
   useEffect(() => {
     axios
-      .get("https://data.binance.com/api/v3/ticker/24hr")
+      .get("https://api4.binance.com/api/v3/ticker/24hr")
       .then((res) => {
         const firstFiveCrypto = res.data.slice(0, 5);
         setCryptoValutes(firstFiveCrypto);
